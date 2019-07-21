@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Jquery slider</title>
+    <link rel="stylesheet" href="lib/css/reset.css">
 </head>
 <body>
-
-
-
+<ul class='example-slider'>
+    <li data-url="https://example.com/image1.jpg" data-type='image'></li>
+    <li data-url="https://example.com/video1.mp4" data-type='video'></li>
+    <li data-url="https://example.com/image2.png" data-type='image'></li>
+</ul>
+<script>
+    $('.example-slider').slider({
+        slideShow: true,
+        interval: 500,
+        animation: 'slide'
+    });
+</script>
 </body>
 </html>
