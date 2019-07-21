@@ -9,42 +9,20 @@
     <link rel="stylesheet" href="lib/css/slider.css">
 </head>
 <body>
-<ul class="slider" style="display: none">
-    <li data-url="https://example.com/image1.jpg" data-type="image"></li>
-    <li data-url="https://example.com/video1.mp4" data-type="video"></li>
-    <li data-url="https://example.com/image2.png" data-type="image"></li>
-</ul>
-
 <ul class="slider" style="margin: 10px auto">
-    <li class="left">
-        <img src="lib/svg/angle-left.svg" alt="">
-    </li>
-    <li><img class="slider_items active" src="lib/3802663778_2e8d3739f3_b.jpg" alt=""></li>
-    <li>
-        <video class="slider_items">
-            <source src="lib/RagnBoneMan-Human.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </li>
-    <li><img class="slider_items" src="lib/12254468203_ad28c1059c_h.jpg" alt=""></li>
-    <li class="right">
-        <img src="lib/svg/angle-right.svg" alt="">
-    </li>
-    <li class="dots">
-        <img src="lib/svg/circle.svg" alt="">
-        <img src="lib/svg/circle.svg" alt="">
-        <img src="lib/svg/circle.svg" alt="">
-    </li>
+    <li data-url="lib/3802663778_2e8d3739f3_b.jpg" data-type="image"></li>
+    <li data-url="lib/RagnBoneMan-Human.mp4" data-type="video"></li>
+    <li data-url="lib/12254468203_ad28c1059c_h.jpg" data-type="image"></li>
 </ul>
 
 <script src="lib/js/jquery.3.2.1.min.js"></script>
 <script src="lib/js/slider-plugin.js"></script>
 <script>
-    // $('.example-slider').slider({
-    //     slideShow: true,
-    //     interval: 500,
-    //     animation: 'slide'
-    // });
+    $('.slider').slider({
+        slideShow: true,
+        interval: 500,
+        animation: 'slide'
+    });
 
 </script>
 </body>
