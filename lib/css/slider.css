@@ -14,10 +14,13 @@
     top: 0;
     left: 0;
     height: 500px;
+    -o-object-fit: cover;
     object-fit: cover;
     opacity: 0;
     border-radius: 15px;
     visibility: hidden;
+    -webkit-transition: 3s;
+    -o-transition: 3s;
     transition: 3s;
 }
 .slider li {
@@ -34,10 +37,16 @@ li.left, li.right{
     top: calc(50% - 60px);
     z-index: 333;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #ffffff21;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .left{
@@ -62,8 +71,14 @@ li.left:hover, li.right:hover{
 li.dots{
     position: absolute;
     bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 li.dots img {
@@ -71,6 +86,8 @@ li.dots img {
     margin: 5px;
     opacity: .3;
     width: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 li.dots img:hover {
